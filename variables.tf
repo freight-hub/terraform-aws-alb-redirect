@@ -6,6 +6,11 @@ variable "cidr" {
   description = "The cidr used for the network"
 }
 
+variable "ipv4_newbits" {
+  default = 8
+  description = "Number of CIDR bits to reserve when picking IPv4 Subnet sizes"
+}
+
 variable "tags" {
   default     = {}
   description = "Extra tags to be applied to the resources"

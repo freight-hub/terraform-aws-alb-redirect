@@ -30,7 +30,7 @@ resource "aws_subnet" "public" {
   count = 2
 
   vpc_id                          = aws_vpc.this.id
-  cidr_block                      = cidrsubnet(var.cidr, 8, count.index)
+  cidr_block                      = cidrsubnet(var.cidr, var.ipv4_newbits, count.index)
   ipv6_cidr_block                 = cidrsubnet(aws_vpc.this.ipv6_cidr_block, 8, count.index)
   map_public_ip_on_launch         = false
   assign_ipv6_address_on_creation = true
