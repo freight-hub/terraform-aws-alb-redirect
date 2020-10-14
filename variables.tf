@@ -21,6 +21,11 @@ variable "https_enabled" {
   description = "Do we enable https"
 }
 
+variable "ipv6_networking_enabled" {
+  default     = false
+  description = "Do we set up IPv6 networking"
+}
+
 variable "certificate_arn" {
   default     = ""
   description = "The arn of the certificate"
