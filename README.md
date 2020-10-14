@@ -156,6 +156,7 @@ The following resources _CAN_ be created:
 | extra\_ssl\_certs | The extra ssl certifice arns applied to the SSL Listener | list(string) | `[]` | no |
 | extra\_ssl\_certs\_count | The count of the extra_ssl_certs | number | `"0"` | no |
 | https\_enabled | Do we enable https | bool | `"false"` | no |
+| ipv6\_networking\_enabled | Do we configure IPv6 routing and ingress in the VPC | string | `"false"` | no |
 | lb\_ip\_address\_type | The `ip_address_type` of the LB, either 'ipv4' or 'dualstack' in case ipv6 needs to be supported as well | string | `"ipv4"` | no |
 | redirect\_rules | A list with maps populated with redirect rules | list(map(string)) | `[]` | no |
 | response\_code | The default status code to return when no rules have been met | string | `"500"` | no |
