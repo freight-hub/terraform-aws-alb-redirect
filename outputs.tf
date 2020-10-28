@@ -10,7 +10,7 @@ output "http_listener_arn" {
 
 output "https_listener_arn" {
   description = "ALB HTTPS listener ARN"
-  value       = var.https_enabled ? aws_lb_listener.http.arn : null
+  value       = var.https_enabled ? aws_lb_listener.https[0].arn : null
 }
 
 output "this_vpc_arn" {
