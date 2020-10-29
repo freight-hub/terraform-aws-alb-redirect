@@ -51,6 +51,7 @@ variable "lb_ip_address_type" {
 }
 
 variable "ipv6_networking_enabled" {
+  type        = bool
   default     = false
   description = "Do we configure IPv6 routing and ingress in the VPC"
 }
